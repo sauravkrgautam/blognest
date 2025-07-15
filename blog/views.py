@@ -5,7 +5,7 @@ from django.views.generic import ListView, DetailView
 from django.views import View
 
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, PostUploadForm
 
 
 # Create your views here.
@@ -133,3 +133,16 @@ class ReadLaterView(View):
         request.session["stored_posts"] = stored_posts
         
         return HttpResponseRedirect("/")
+    
+
+class CreatePostView(View):
+    def get(self, request):
+        form = PostUploadForm()
+        return render(request, "blog/create-post.html", {"form": form})
+
+    def post(self, request):
+        form = PostUploadForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect("/")  # redirect to home or post list
+        return render(request, "blog/create-post.html", {"form": form})
