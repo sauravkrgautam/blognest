@@ -1,0 +1,191 @@
+#comment-form {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 40rem;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+}
+
+#comment-form button {
+  font: inherit;
+  background-color: #390281;
+  color: white;
+  border: 1px solid #390281;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#comment-form button:hover,
+#comment-form button:active {
+  background-color: #4f0ba7;
+  border-color: #4f0ba7;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-control input,
+.form-control textarea {
+  display: block;
+  width: 100%;
+  font: inherit;
+  padding: 0.25rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.errorlist {
+  list-style: none;
+  margin: 0.5rem 0;
+  padding: 0;
+  color: #d6000b;
+}
+
+.invalid label {
+  color: #d6000b;
+}
+
+.invalid input,
+.invalid textarea {
+  border-color: #d6000b;
+  background-color: #ffe6e7;
+}
+
+#alert {
+  margin: 8rem auto 3rem auto;
+  border: 1px solid #d6000b;
+  background-color: #ffe6e7;
+  padding: 1rem;
+  width: 90%;
+  max-width: 40rem;
+}
+
+#alert a {
+  text-decoration: none;
+  border: 1px solid #d6000b;
+  background-color: #d6000b;
+  color: white;
+  padding: 0.25rem 1.5rem;
+  border-radius: 6px;
+}
+
+#comments {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 60rem;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 1rem 2rem;
+}
+
+#comments ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#comments li {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+}
+
+#comments li:last-of-type {
+  border-bottom: none;
+}
+
+#comments h2 {
+  color: #464646;
+}
+
+
+this is another css code
+
+.comment-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+}
+
+#comment-form {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+#comment-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form-control {
+  margin-bottom: 1.2rem;
+}
+
+.form-control label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  transition: border-color 0.3s ease;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+  border-color: #5a2ca0;
+  background-color: #fff;
+}
+
+.form-control .errorlist {
+  color: #d93025;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  padding-left: 0.2rem;
+}
+
+#comment-form button {
+  display: block;
+  width: 100%;
+  background-color: #5a2ca0;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#comment-form button:hover {
+  background-color: #7834d0;
+}

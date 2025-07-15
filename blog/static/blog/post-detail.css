@@ -1,0 +1,247 @@
+body {
+  background-color: #e7e7e7;
+}
+
+#main-navigation {
+  background-color: #390281;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+#summary {
+  margin: 8rem auto 3rem auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 90rem;
+  border-radius: 16px;
+  background-color: #5706c0;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  height: 22rem;
+}
+
+#summary h2 {
+  color: white;
+  font-size: 4.5rem;
+  margin-bottom: 0.25rem;
+}
+
+#summary article {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-align: right;
+  color: white;
+}
+
+#summary article img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 12px;
+  transform: rotateZ(5deg);
+  border: 5px solid white;
+  margin-bottom: 1rem;
+}
+
+#summary address {
+  font-weight: bold;
+}
+
+#summary a {
+  color: white;
+  text-decoration: none;
+}
+
+#summary time {
+  font-weight: bold;
+}
+
+#read-later {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+#read-later button {
+  background-color: #390281;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(57, 2, 129, 0.2);
+}
+
+#read-later button:hover,
+#read-later button:active {
+  background-color: #4f0ba7;
+  box-shadow: 0 6px 12px rgba(57, 2, 129, 0.3);
+  transform: scale(1.03);
+}
+
+main {
+  width: 90%;
+  max-width: 90rem;
+  margin: 3rem auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.tag {
+  background-color: white;
+  color: #390281;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.comment-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+}
+
+#comment-form {
+  margin: 2rem auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+#comment-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form-control {
+  margin-bottom: 1.2rem;
+}
+
+.form-control label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  transition: border-color 0.3s ease;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+  border-color: #5a2ca0;
+  background-color: #fff;
+}
+
+.form-control .errorlist {
+  color: #d93025;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  padding-left: 0.2rem;
+}
+
+.form-control .invalid label {
+  color: #d6000b;
+}
+
+.form-control .invalid input,
+.form-control .invalid textarea {
+  background-color: #ffe6e7;
+}
+
+#comment-form button {
+  display: block;
+  width: 100%;
+  background-color: #5a2ca0;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#comment-form button:hover {
+  background-color: #7834d0;
+}
+
+#alert {
+  margin: 8rem auto 3rem auto;
+  border: 1px solid #d6000b;
+  background-color: #ffe6e7;
+  padding: 1rem;
+  width: 90%;
+  max-width: 40rem;
+}
+
+#alert a {
+  text-decoration: none;
+  border: 1px solid #d6000b;
+  background-color: #d6000b;
+  color: white;
+  padding: 0.25rem 1.5rem;
+  border-radius: 6px;
+}
+
+#comments {
+  width: 90%;
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#comments ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#comments li {
+  background-color: white;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #390281;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+#comments h2 {
+  font-size: 1.1rem;
+  color: #390281;
+  margin-bottom: 0.5rem;
+}
+
+#comments p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}FootPrints & Frames{% endblock  %}
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "blog/post.css" %}">
+  <link rel="stylesheet" href="{% static "blog/index.css" %}">
+{% endblock %}
+
+{% block content %}
+  <section id="welcome">
+    <header>
+        <img src="{% static "blog/images/saurav.jpeg" %}" alt="Saurav - The Author of This Blog">
+        <h2>Reflections That Stay</h2>
+    </header>
+    <p>“Hi, I’m Saurav — I love sharing moments, journeys, and reflections that linger in the soul.”</p>
+  </section>
+
+  <section id="latest-posts">
+    <h2>“New Whispers on the Path”</h2>
+
+    <ul>
+        {% for post in posts %}
+          {% include "blog/includes/post.html" %}
+        {% endfor %}
+    </ul>
+  </section>
+  <section id="about">
+      <header>
+          <img src="{% static "blog/images/saurav.jpeg" %}" alt="Saurav - The Author of This Blog">
+          <h2>“What Do I Do?”</h2>
+      </header>
+      <p>
+        I write stories, capture memories, and build the web spaces where they can live. Whether it’s a poem, a journey, or a line of code—I pour myself into it.
+      </p>
+
+      <p>
+        I believe every moment has a story to tell—whether it's through a quiet walk, a shared memory, or a well-written function. This blog is my way of capturing and sharing those moments.
+      </p>
+  </section>
+{% endblock %}
