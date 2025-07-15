@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -120,21 +121,27 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
-
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 STATIC_URL = 'static/'
-
 STATICFILES_DIRS = [
     BASE_DIR / "static"
 ]
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+
+# Whitenoise : StaticFile handling
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+# Media (uploads like images)
+
+MEDIA_ROOT = BASE_DIR / "uploads"
+MEDIA_URL = "/image-file/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_ROOT = BASE_DIR / "uploads"
-MEDIA_URL = "/image-file/"
+
+
+
