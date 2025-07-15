@@ -1,4 +1,6 @@
 import os
+import cloudinary
+import cloudinary_storage
 
 """
 Django settings for BlogNest project.
@@ -34,6 +36,8 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'blog',
+    'cloudinary',
+    'cloudinary_storage',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -132,10 +136,13 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-# Media (uploads like images)
+# # Media (uploads like images)
 
-MEDIA_ROOT = BASE_DIR / "uploads"
-MEDIA_URL = "/image-file/"
+# MEDIA_ROOT = BASE_DIR / "uploads"
+# MEDIA_URL = "/image-file/"
+
+# Media files storage
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
